@@ -1,0 +1,31 @@
+:host ::ng-deep ul {
+    &.techList {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    
+        li {
+            background: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 7px 13px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &.error {
+        li {
+            color: #ff0000;
+            background: rgba($color: #ff0000, $alpha: 0.08);
+            border-color: red;
+        }
+    }
+
+    &.completed {
+        li {
+            color: #008000;
+            background: rgba($color: #008000, $alpha: 0.08);
+            border-color: #008000;
+        }
+    }
+}
